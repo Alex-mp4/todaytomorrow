@@ -1,4 +1,4 @@
-import './NavAndFooter.css'
+import '../pages/style.css'
 
 function Nav() {
 

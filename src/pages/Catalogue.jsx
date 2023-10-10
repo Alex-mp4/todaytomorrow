@@ -1,20 +1,13 @@
-//import { useState } from 'react'
-import './App.css'
-import Nav from './Nav.jsx'
-import Footer from './Footer.jsx'
+import './style.css'
 
 function Catalogue() {
 
 
     return (
         <>
-            <Nav />
-
             <div>
                 <p>Grid here</p>
             </div>
-
-            <Footer />
         </>
     )
 }
