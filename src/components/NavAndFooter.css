@@ -1,3 +1,7 @@
+nav {
+    display: flex;
+}
+
 p {
     font-weight: 600;
     font-size: 2rem;
@@ -14,4 +18,8 @@ p {
 .accentColor {
     color: #85604D;
     font-weight: 400;
+}
+
+.link {
+    text-decoration: none;
 }

@@ -42,8 +42,15 @@
 }
 
 html {
+    scroll-behavior: smooth;
+    margin: 0;
     font-family: 'Outfit', sans-serif;
     background-color: var(--color-bg);
+    color: var(--color-dark);
+}
+
+body {
+    margin: 0;
 }
 
 nav p {
@@ -51,16 +58,46 @@ nav p {
     font-size: 2rem;
 }
 
+h1 {
+    font-size: var(--step-5);
+    font-weight: 300;
+    margin-bottom: 0;
+    color: var(--color-bg);
+}
+
+h2 {
+    font-size: var(--step-2);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: var(--color-bg);
+}
+
+h3 {
+    font-size: var(--step-3);
+}
+
 .hero {
+    width: 100%;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftHero {
+    background-color: #2F2D2E;
+    width: 95%;
+    text-align: center;
 }
 
 .hero p {
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    font-size: var(--step-3);
 }
 
 button {
+    color: var(--color-dark);
     border-style: none;
     background-color: var(--color-bg);
     font-weight: 700;
@@ -69,14 +106,36 @@ button {
     box-shadow: 4px 4px 8px var(--color-dark);
 }
 
+.centerButton {
+    text-align: center;
+}
+
 .primaryColor {
     color: var(--color-primary);
 }
 
-.darkColor {
-    color: var(--color-dark);
-}
-
 .accentColor {
     color: var(--color-accent);
+}
+
+.categorySelection {
+    display: flex;
+}
+
+.slideshowContainer {
+    display: flex;
+    width: 100%;
+    height: 16rem;
+}
+
+.slideshowContainer img {
+    object-fit: none;
+    width: 100%;
+}
+
+.slideshowContainer p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: scale(-1);
+    font-size: var(--step-3);
 }
