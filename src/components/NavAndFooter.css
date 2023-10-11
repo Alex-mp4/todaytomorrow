@@ -51,3 +51,11 @@ p {
 .link {
     text-decoration: none;
 }
+
+footer {
+    background-color: #BFA490;
+}
+
+footer div {
+    display: flex;
+}

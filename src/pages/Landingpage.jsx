@@ -18,24 +18,34 @@ function Landingpage() {
 
             <h3>Shop by category</h3>
             <div className="categorySelection">
-                <div>
-                    <img></img>
+                <div className="first">
+                    <div className="categoryCircle">
+                        <img></img>
+                    </div>
                     <p>Seating</p>
                 </div>
                 <div>
-                    <img></img>
+                    <div className="categoryCircle">
+                        <img></img>
+                    </div>
                     <p>Tables</p>
                 </div>
                 <div>
-                    <img></img>
+                    <div className="categoryCircle">
+                        <img></img>
+                    </div>
                     <p>Lighting</p>
                 </div>
                 <div>
-                    <img></img>
+                    <div className="categoryCircle">
+                        <img></img>
+                    </div>
                     <p>Plants</p>
                 </div>
-                <div>
-                    <img></img>
+                <div className="last">
+                    <div className="categoryCircle">
+                        <img></img>
+                    </div>
                     <p>Shade</p>
                 </div>
             </div>

@@ -75,6 +75,7 @@ h2 {
 
 h3 {
     font-size: var(--step-3);
+    margin-left: 2rem;
 }
 
 .hero {
@@ -97,6 +98,7 @@ h3 {
 }
 
 button {
+    font-family: 'Outfit', sans-serif;
     color: var(--color-dark);
     border-style: none;
     background-color: var(--color-bg);
@@ -120,6 +122,31 @@ button {
 
 .categorySelection {
     display: flex;
+    overflow: scroll;
+}
+
+.categorySelection p {
+    font-size: var(--step-1);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+.categoryCircle {
+    width: var(--space-3xl);
+    height: var(--space-3xl);
+    background-color: var(--color-tertiary);
+    border-radius: 100px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.first {
+    margin-left: auto;
+}
+
+.last {
+    margin-right: auto;
 }
 
 .slideshowContainer {
