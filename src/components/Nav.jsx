@@ -7,9 +7,13 @@ function Nav() {
     return (
         <nav>
             <Link to={'./'} className="link"><p><span className='primaryColor'>Today</span> <span className='accentColor'>&</span> <span className='darkColor'>Tomorrow</span></p></Link>
-            <i className='material-icons'>search</i>
-            <input type="search" />
-            <i className='material-icons'>shopping_cart</i>
+            <div className="rightNav">
+                <div className="searchNav">
+                    <span className="material-symbols-outlined">search</span>
+                    <input type="search" />
+                </div>
+                <span className="material-symbols-outlined">shopping_cart</span>
+            </div>
         </nav>
     )
 }

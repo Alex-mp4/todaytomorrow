@@ -1,5 +1,33 @@
 nav {
     display: flex;
+    margin-left: 2rem;
+}
+
+.rightNav {
+    margin-left: auto;
+    margin-right: 7%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+
+input {
+    height: 2rem;
+    border-style: none;
+    background-color: var(--color-bg);
+    box-shadow: 4px 4px 8px var(--color-dark);
+    width: 30vw;
+    padding-left: 2rem;
+    margin-right: 2vw;
+    font-size: 1rem;
+}
+
+.material-symbols-outlined {
+    font-size: 2rem;
+}
+
+.searchNav .material-symbols-outlined {
+    position: absolute;
 }
 
 p {
