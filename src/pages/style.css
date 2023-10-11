@@ -86,7 +86,9 @@ h3 {
 }
 
 .leftHero {
-    background-color: #2F2D2E;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(src/assets/heropatio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 95%;
     text-align: center;
 }
@@ -132,6 +134,12 @@ button {
     margin-top: 0;
 }
 
+.categorySelection img {
+    position: absolute;
+    width: var(--space-2xl);
+    height: var(--space-2xl);
+}
+
 .categoryCircle {
     width: var(--space-3xl);
     height: var(--space-3xl);
@@ -139,11 +147,16 @@ button {
     border-radius: 100px;
     margin-left: 5vw;
     margin-right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .first {
     margin-left: auto;
 }
+
 
 .last {
     margin-right: auto;

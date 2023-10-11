@@ -20,31 +20,31 @@ function Landingpage() {
             <div className="categorySelection">
                 <div className="first">
                     <div className="categoryCircle">
-                        <img></img>
+                        <img src="src/assets/seating.png" alt="Seating"></img>
                     </div>
                     <p>Seating</p>
                 </div>
                 <div>
                     <div className="categoryCircle">
-                        <img></img>
+                        <img src="src/assets/table-chairs.png" alt="Tables"></img>
                     </div>
                     <p>Tables</p>
                 </div>
                 <div>
                     <div className="categoryCircle">
-                        <img></img>
+                        <img src="src/assets/lamp.png" alt="Lighting"></img>
                     </div>
                     <p>Lighting</p>
                 </div>
                 <div>
                     <div className="categoryCircle">
-                        <img></img>
+                        <img src="src/assets/plant.png" alt="Plants"></img>
                     </div>
                     <p>Plants</p>
                 </div>
                 <div className="last">
                     <div className="categoryCircle">
-                        <img></img>
+                        <img src="src/assets/parasol.png" alt="Shade"></img>
                     </div>
                     <p>Shade</p>
                 </div>

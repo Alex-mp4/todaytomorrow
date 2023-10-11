@@ -10,7 +10,7 @@ function Nav() {
             <div className="rightNav">
                 <div className="searchNav">
                     <span className="material-symbols-outlined">search</span>
-                    <input type="search" />
+                    <input type="search" placeholder="Search..." />
                 </div>
                 <span className="material-symbols-outlined">shopping_cart</span>
             </div>
