@@ -87,6 +87,11 @@ h4 {
     margin-left: var(--space-xs);
 }
 
+h5 {
+    font-size: var(--step-1);
+    margin-bottom: var(--space-xs);
+}
+
 .hero {
     width: 100%;
     display: flex;
@@ -220,4 +225,11 @@ button {
     background-color: var(--color-dark);
     color: var(--color-bg);
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .productGridRow1 {
+        display: block;
+    }
+
 }
