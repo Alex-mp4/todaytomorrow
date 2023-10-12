@@ -38,6 +38,7 @@
     --color-dark: #2F2D2E;
     --color-tertiary: #BFA490;
     --color-accent: #85604D;
+    --color-shadow: #5a5a5a;
 
 }
 
@@ -107,7 +108,7 @@ button {
     font-weight: 700;
     font-size: var(--step-1);
     padding: var(--space-s);
-    box-shadow: 4px 4px 8px var(--color-dark);
+    box-shadow: 4px 4px 8px var(--color-shadow);
 }
 
 .centerButton {
