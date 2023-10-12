@@ -79,6 +79,14 @@ h3 {
     margin-left: 2rem;
 }
 
+h4 {
+    font-size: var(--step-4);
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: var(--space-s);
+    margin-left: var(--space-xs);
+}
+
 .hero {
     width: 100%;
     display: flex;
@@ -167,6 +175,7 @@ button {
     display: flex;
     width: 100%;
     height: 16rem;
+    margin-bottom: var(--space-xl);
 }
 
 .slideshowContainer img {
@@ -179,4 +188,36 @@ button {
     text-orientation: mixed;
     transform: scale(-1);
     font-size: var(--step-3);
+}
+
+.productGridRow1 {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.productCard {
+    width: 25vw;
+    text-decoration: none;
+}
+
+.productCard p {
+    font-size: var(--step-1);
+    font-weight: 400;
+    margin: 0;
+    margin-left: var(--space-xs);
+}
+
+.productCard img {
+    margin: 0;
+    width: 25vw;
+    display: block;
+}
+
+.product1 {
+    background-color: var(--color-dark);
+    color: var(--color-bg);
+    padding-bottom: 10px;
 }
