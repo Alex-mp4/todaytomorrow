@@ -1,7 +1,26 @@
 import { Link } from "react-router-dom";
 import './style.css'
+import { useState, useEffect } from 'react'
 
 function Landingpage() {
+
+    const [data, setData] = useState([])
+
+    async function fetchData() {
+        await fetch('http://localhost:3000')
+            .then(res => res.json())
+            .then(result => {
+                setData(result.data)
+                console.log(result.data)
+            }).catch(err => {
+                console.log(err)
+            })
+    }
+    useEffect(() => {
+        fetchData()
+        console.log(data)
+    }, [])
+
     return (
         <>
 
