@@ -7,7 +7,7 @@ function Landingpage() {
     const [data, setData] = useState([])
 
     async function fetchData() {
-        await fetch('http://localhost:3000')
+        await fetch('http://localhost:3000/product')
             .then(res => res.json())
             .then(result => {
                 setData(result.data)
@@ -23,7 +23,6 @@ function Landingpage() {
 
     return (
         <>
-
             <div className='hero'>
                 <div className="leftHero">
                     <h1>Find outdoor furniture</h1>

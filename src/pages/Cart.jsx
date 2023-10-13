@@ -6,7 +6,7 @@ function Cart() {
     const [data, setData] = useState([])
 
     async function fetchData() {
-        await fetch('http://localhost:3000')
+        await fetch('http://localhost:3000/product')
             .then(res => res.json())
             .then(result => {
                 setData(result.data)

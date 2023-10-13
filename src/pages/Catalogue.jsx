@@ -1,13 +1,13 @@
 import './style.css'
-import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react'
+import ProductCard from '../components/ProductCard.jsx'
 
 function Catalogue() {
 
     const [data, setData] = useState([])
 
     async function fetchData() {
-        await fetch('http://localhost:3000')
+        await fetch('http://localhost:3000/product')
             .then(res => res.json())
             .then(result => {
                 setData(result.data)
@@ -24,30 +24,15 @@ function Catalogue() {
     return (
         <>
             <div className="productGridRow1">
-                <Link to={'/'} className="productCard">
-                    <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
-                    <div className="product1">
-                        <h4>Cushion Wonder</h4>
-                        <p>Dual Seating</p>
-                        <p>2000:-</p>
-                    </div>
-                </Link>
-                <Link to={'/'} className="productCard">
-                    <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
-                    <div className="product1">
-                        <h4>Cushion Wonder</h4>
-                        <p>Dual Seating</p>
-                        <p>2000:-</p>
-                    </div>
-                </Link>
-                <Link to={'/'} className="productCard">
-                    <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
-                    <div className="product1">
-                        <h4>Cushion Wonder</h4>
-                        <p>Dual Seating</p>
-                        <p>2000:-</p>
-                    </div>
-                </Link>
+                {data.map((product) => (
+                    <ProductCard
+                        key={product.id}
+                        image={product.image}
+                        name={product.name}
+                        description={product.description}
+                        price={product.price}
+                    />
+                ))}
             </div>
         </>
     )
