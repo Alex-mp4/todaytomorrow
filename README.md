@@ -4,9 +4,6 @@
 
 
 ## Current plan:
-- Make search input more pleasant
-- Create grid (probably a case of display flex for future use)
-- Footer (maybe a redesign later, but at least Figma appearance)
 - Catalogue page (uses grid)
 - Individual product page
 - Give repository prisma access and add database
