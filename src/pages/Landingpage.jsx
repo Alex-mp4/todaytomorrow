@@ -73,10 +73,10 @@ function Landingpage() {
                 <img src="src/assets/patioslideshow.jpg"></img>
             </div>
 
-            <div className="productGridRow1">
+            <div className="productGridRow">
                 <Link to={'/'} className="productCard">
                     <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
-                    <div className="product1">
+                    <div className="product">
                         <h4>Cushion Wonder</h4>
                         <p>Dual Seating</p>
                         <p>2000:-</p>
@@ -84,7 +84,7 @@ function Landingpage() {
                 </Link>
                 <Link to={'/'} className="productCard">
                     <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
-                    <div className="product1">
+                    <div className="product">
                         <h4>Cushion Wonder</h4>
                         <p>Dual Seating</p>
                         <p>2000:-</p>
@@ -92,7 +92,35 @@ function Landingpage() {
                 </Link>
                 <Link to={'/'} className="productCard">
                     <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
-                    <div className="product1">
+                    <div className="product">
+                        <h4>Cushion Wonder</h4>
+                        <p>Dual Seating</p>
+                        <p>2000:-</p>
+                    </div>
+                </Link>
+            </div>
+            <div className="productGridRow row2">
+                <Link to={'/'} className="productCard">
+                    <div className="product">
+                        <h4>Cushion Wonder</h4>
+                        <p>Dual Seating</p>
+                        <p>2000:-</p>
+                    </div>
+                    <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
+                </Link>
+            </div>
+            <div className="productGridRow row3">
+                <Link to={'/'} className="productCard">
+                    <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
+                    <div className="product">
+                        <h4>Cushion Wonder</h4>
+                        <p>Dual Seating</p>
+                        <p>2000:-</p>
+                    </div>
+                </Link>
+                <Link to={'/'} className="productCard">
+                    <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
+                    <div className="product">
                         <h4>Cushion Wonder</h4>
                         <p>Dual Seating</p>
                         <p>2000:-</p>

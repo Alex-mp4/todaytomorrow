@@ -85,6 +85,7 @@ h4 {
     margin-top: 0;
     margin-bottom: var(--space-s);
     margin-left: var(--space-xs);
+    margin-right: var(--space-xs);
 }
 
 h5 {
@@ -197,12 +198,13 @@ button {
     font-size: var(--step-3);
 }
 
-.productGridRow1 {
+.productGridRow {
     display: flex;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
+    margin-bottom: var(--space-m);
 }
 
 .productCard {
@@ -221,16 +223,36 @@ button {
     margin: 0;
     width: 25vw;
     display: block;
+    max-height: 20vw;
 }
 
-.product1 {
+.product {
     background-color: var(--color-dark);
     color: var(--color-bg);
     padding-bottom: 10px;
 }
 
+.row2 img {
+    width: 65vw;
+    object-fit: cover;
+}
+
+.row2 .productCard {
+    display: flex;
+    width: 100%;
+}
+
+.row3 .productCard {
+    width: 39vw;
+}
+
+.row3 img {
+    width: 39vw;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 1000px) {
-    .productGridRow1 {
+    .productGridRow {
         display: block;
     }
 
@@ -240,11 +262,23 @@ button {
         margin-bottom: var(--space-m);
     }
 
+    .row2 .productCard {
+        display: none;
+    }
+
     .productCard img {
         object-fit: cover;
     }
 
-    .product1 {
+    .product {
         width: 50vw;
+    }
+
+    .row3 .productCard {
+        width: 80vw;
+    }
+
+    .row3 img {
+        width: auto;
     }
 }
