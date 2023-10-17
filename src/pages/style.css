@@ -149,6 +149,7 @@ button {
     font-weight: 400;
     text-align: center;
     margin-top: 0;
+    color: var(--color-dark);
 }
 
 .categorySelection img {
@@ -177,6 +178,10 @@ button {
 
 .last {
     margin-right: auto;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .slideshowContainer {

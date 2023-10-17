@@ -23,13 +23,12 @@ function Catalogue() {
 
     return (
         <>
-            <div className="productGridRow1">
+            <div className="productGridRow">
                 {data.map((product) => (
                     <ProductCard
                         key={product.id}
-                        image={product.image}
                         name={product.name}
-                        description={product.description}
+                        categories={product.categories}
                         price={product.price}
                     />
                 ))}

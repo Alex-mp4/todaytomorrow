@@ -7,9 +7,9 @@ function ProductCard(props) {
         <>
             <Link to={'/'} className="productCard">
                 <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
-                <div className="product1">
+                <div className="product">
                     <h4>{props.name}</h4>
-                    <p>Thing</p>
+                    <p>Category</p>
                     <p>{props.price}:-</p>
                 </div>
             </Link>

@@ -36,36 +36,36 @@ function Landingpage() {
 
             <h3>Shop by category</h3>
             <div className="categorySelection">
-                <div className="first">
+                <Link to={'/'} className="first link">
                     <div className="categoryCircle">
                         <img src="src/assets/seating.png" alt="Seating"></img>
                     </div>
                     <p>Seating</p>
-                </div>
-                <div>
+                </Link>
+                <Link to={'/'} className="link">
                     <div className="categoryCircle">
                         <img src="src/assets/table-chairs.png" alt="Tables"></img>
                     </div>
                     <p>Tables</p>
-                </div>
-                <div>
+                </Link>
+                <Link to={'/'} className="link">
                     <div className="categoryCircle">
                         <img src="src/assets/lamp.png" alt="Lighting"></img>
                     </div>
                     <p>Lighting</p>
-                </div>
-                <div>
+                </Link>
+                <Link to={'/'} className="link">
                     <div className="categoryCircle">
                         <img src="src/assets/plant.png" alt="Plants"></img>
                     </div>
                     <p>Plants</p>
-                </div>
-                <div className="last">
+                </Link>
+                <Link to={'/'} className="link last">
                     <div className="categoryCircle">
                         <img src="src/assets/parasol.png" alt="Shade"></img>
                     </div>
                     <p>Shade</p>
-                </div>
+                </Link>
             </div>
 
             <div className="slideshowContainer">
@@ -110,6 +110,7 @@ function Landingpage() {
                 </Link>
             </div>
             <div className="productGridRow row3">
+
                 <Link to={'/'} className="productCard">
                     <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
                     <div className="product">
@@ -127,6 +128,7 @@ function Landingpage() {
                     </div>
                 </Link>
             </div>
+
 
             <div className="centerButton">
                 <Link to='./Catalogue'><button>Browse <span className='primaryColor'>Today</span>&apos;s <span className='accentColor'>&</span> Tomorrow&apos;s Items</button></Link>
