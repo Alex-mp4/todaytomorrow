@@ -73,7 +73,7 @@ function Landingpage() {
                 <img src="src/assets/patioslideshow.jpg"></img>
             </div>
 
-            <div className="productGridRow">
+            <div className="productGridRow d-flex">
                 <Link to={'/'} className="productCard">
                     <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
                     <div className="product">
@@ -109,7 +109,7 @@ function Landingpage() {
                     <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
                 </Link>
             </div>
-            <div className="productGridRow row3">
+            <div className="productGridRow row3 d-flex">
 
                 <Link to={'/'} className="productCard">
                     <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>

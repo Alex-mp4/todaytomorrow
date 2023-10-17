@@ -23,7 +23,7 @@ function Catalogue() {
 
     return (
         <>
-            <div className="productGridRow">
+            <div className="catalogueProducts productGridRow">
                 {data.map((product) => (
                     <ProductCard
                         key={product.id}
