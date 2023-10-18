@@ -289,6 +289,10 @@ button {
 
 
 @media screen and (max-width: 1000px) {
+    .BSText {
+        display: none;
+    }
+
     .productGridRow {
         display: block;
     }
@@ -327,13 +331,13 @@ button {
 
     .catalogueProducts .product {
         width: 50vw;
-        height: 45vh;
+        height: 35vh;
     }
 
     .catalogueProducts .productCard {
         display: flex;
         width: 80vw;
-        height: 45vh;
+        height: 35vh;
         min-height: min-content;
         margin-bottom: var(--space-m);
     }
@@ -341,5 +345,6 @@ button {
     .catalogueProducts .productCard img {
         width: 35vw;
         height: 100%;
+        max-height: 100%;
     }
 }
