@@ -206,6 +206,8 @@ button {
 .catalogueProducts {
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-template-rows: max-content;
+    row-gap: var(--space-m);
 }
 
 .d-flex {
@@ -239,10 +241,24 @@ button {
     max-height: 20vw;
 }
 
+.catalogueProducts .productCard img {
+    object-fit: none;
+    margin: 0;
+    width: 25vw;
+    display: block;
+    height: 45%;
+    max-height: 20vw;
+}
+
 .product {
     background-color: var(--color-dark);
     color: var(--color-bg);
     padding-bottom: 10px;
+}
+
+.catalogueProducts .product {
+    height: 55%;
+    min-height: fit-content;
 }
 
 .row2 img {
@@ -261,8 +277,16 @@ button {
 
 .row3 img {
     width: 39vw;
+    height: max-content;
     object-fit: cover;
 }
+
+.BSText {
+    text-align: center;
+    margin-top: var(--space-l);
+    color: var(--color-dark);
+}
+
 
 @media screen and (max-width: 1000px) {
     .productGridRow {
@@ -285,6 +309,7 @@ button {
 
     .product {
         width: 50vw;
+        padding-bottom: 0;
     }
 
     .row3 .productCard {
@@ -293,5 +318,28 @@ button {
 
     .row3 img {
         width: auto;
+    }
+
+    .catalogueProducts img {
+        height: 100%;
+        width: 50vw;
+    }
+
+    .catalogueProducts .product {
+        width: 50vw;
+        height: 45vh;
+    }
+
+    .catalogueProducts .productCard {
+        display: flex;
+        width: 80vw;
+        height: 45vh;
+        min-height: min-content;
+        margin-bottom: var(--space-m);
+    }
+
+    .catalogueProducts .productCard img {
+        width: 35vw;
+        height: 100%;
     }
 }

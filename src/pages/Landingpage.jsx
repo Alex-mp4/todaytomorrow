@@ -112,12 +112,15 @@ function Landingpage() {
             <div className="productGridRow row3 d-flex">
 
                 <Link to={'/'} className="productCard">
-                    <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
-                    <div className="product">
-                        <h4>Cushion Wonder</h4>
-                        <p>Dual Seating</p>
-                        <p>2000:-</p>
+                    <div className="d-flex">
+                        <div className="product">
+                            <h4>Cushion Wonder</h4>
+                            <p>Dual Seating</p>
+                            <p>2000:-</p>
+                        </div>
+                        <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
                     </div>
+                    <h4 className="BSText"><span className='primaryColor'>BEST</span><span className='accentColor'>&</span>SELLERS</h4>
                 </Link>
                 <Link to={'/'} className="productCard">
                     <img src="src/assets/cushionwonder.jpg" alt="Cushion Wonder"></img>
