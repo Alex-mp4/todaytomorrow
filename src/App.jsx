@@ -6,6 +6,7 @@ import Footer from './components/Footer.jsx'
 import Landingpage from './pages/Landingpage'
 import Catalogue from './pages/Catalogue'
 import Cart from './pages/Cart'
+import Product from './pages/Product'
 
 function App() {
 
@@ -16,8 +17,9 @@ function App() {
         <Nav />
         <Routes>
           <Route path='/' element={<Landingpage />} />
-          <Route path='/Catalogue' element={<Catalogue />} />
-          <Route path='/Cart' element={<Cart />} />
+          <Route path='/catalogue' element={<Catalogue />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/product/:id' element={<Product />} />
         </Routes>
         <Footer />
       </BrowserRouter>

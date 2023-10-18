@@ -12,7 +12,7 @@ function Nav() {
                     <span className="material-symbols-outlined">search</span>
                     <input type="search" placeholder="Search..." />
                 </div>
-                <Link to={'/Cart'} className="link"><span className="material-symbols-outlined">shopping_cart</span></Link>
+                <Link to={'/cart'} className="link"><span className="material-symbols-outlined">shopping_cart</span></Link>
             </div>
         </nav>
     )

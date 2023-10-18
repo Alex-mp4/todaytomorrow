@@ -1,13 +1,15 @@
 import './style.css'
 import { useState, useEffect } from 'react'
+import { useParams } from "react-router-dom"
 import ProductCard from '../components/ProductCard.jsx'
 
 function Catalogue() {
 
     const [data, setData] = useState([])
+    const { id } = useParams();
 
     async function fetchData() {
-        await fetch('http://localhost:3000/product')
+        await fetch('http://localhost:3000/product/' + id)
             .then(res => res.json())
             .then(result => {
                 setData(result.data)
@@ -23,17 +25,12 @@ function Catalogue() {
 
     return (
         <>
-            <div className="catalogueProducts productGridRow">
-                {data.map((product) => (
-                    <ProductCard
-                        key={product.id}
-                        id={product.id}
-                        name={product.name}
-                        categories={product.categories}
-                        price={product.price}
-                    />
-                ))}
-            </div>
+            <ProductCard
+                key={data.id}
+                name={data.name}
+                categories={data.categories}
+                price={data.price}
+            />
         </>
     )
 }

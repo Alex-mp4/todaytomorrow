@@ -27,7 +27,7 @@ function Landingpage() {
                 <div className="leftHero">
                     <h1>Find outdoor furniture</h1>
                     <h2>for any day</h2>
-                    <Link to='./Catalogue'><button>Browse <span className='primaryColor'>Today</span>&apos;s <span className='accentColor'>&</span> Tomorrow&apos;s Items</button></Link>
+                    <Link to='./catalogue'><button>Browse <span className='primaryColor'>Today</span>&apos;s <span className='accentColor'>&</span> Tomorrow&apos;s Items</button></Link>
                 </div>
                 <div>
                     <p><span className='primaryColor'>ONGOING</span><span className='accentColor'>&</span>TRENDING</p>
@@ -134,7 +134,7 @@ function Landingpage() {
 
 
             <div className="centerButton">
-                <Link to='./Catalogue'><button>Browse <span className='primaryColor'>Today</span>&apos;s <span className='accentColor'>&</span> Tomorrow&apos;s Items</button></Link>
+                <Link to='./catalogue'><button>Browse <span className='primaryColor'>Today</span>&apos;s <span className='accentColor'>&</span> Tomorrow&apos;s Items</button></Link>
             </div>
 
         </>
