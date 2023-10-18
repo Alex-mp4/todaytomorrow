@@ -4,6 +4,6 @@
 
 
 ## Current plan:
-- Catalogue page (uses grid)
-- Individual product page
-- Give repository prisma access and add database
+- Design for product page
+- Open new pages for products
+- Cart (Jens' code)
