@@ -1,11 +1,11 @@
 nav {
     display: flex;
-    margin-left: 2rem;
+    margin-left: var(--space-s);
 }
 
 .rightNav {
     margin-left: auto;
-    margin-right: 7%;
+    margin-right: var(--space-s);
     margin-top: auto;
     margin-bottom: auto;
     display: flex;

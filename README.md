@@ -6,4 +6,4 @@
 ## Current plan:
 - Design for product page
 - Design cart page
-- Cart (Jens' code)
+- Category links

@@ -1,5 +1,6 @@
 import { useState, useContext } from "react"
 import { CartContext } from "../context/cartContextProvider";
+import { Link } from "react-router-dom";
 
 function ProductPageCard(props) {
     const [products, setProducts] = useState([])
@@ -7,6 +8,7 @@ function ProductPageCard(props) {
 
     return (
         <>
+            <Link to={'../catalogue'}><button>Back to catalogue</button></Link>
             <div className="productCard">
                 <img src="../src/assets/cushionwonder.jpg" alt="Image"></img>
                 <div className="product">
