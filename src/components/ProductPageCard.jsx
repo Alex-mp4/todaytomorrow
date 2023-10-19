@@ -8,6 +8,9 @@ function ProductPageCard(props) {
                     <h4>{props.name}</h4>
                     <p>Category</p>
                     <p>{props.price}:-</p>
+                    <div className="centerButton">
+                        <button>Add to cart</button>
+                    </div>
                 </div>
             </div>
         </>
