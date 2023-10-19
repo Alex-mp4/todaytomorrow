@@ -5,5 +5,5 @@
 
 ## Current plan:
 - Design for product page
-- Open new pages for products
+- Design cart page
 - Cart (Jens' code)

@@ -22,9 +22,20 @@ function Cart() {
 
     return (
         <>
-            <div>
-                <p>Cart</p>
+            <button>Remove all</button>
+            <div className='cartProducts d-flex'>
+                <img src="../src/assets/cushionwonder.jpg" alt="Image"></img>
+                <div className='d-flex'>
+                    <div>
+                        <p>Name of product</p>
+                    </div>
+                    <div className='cartContent'>
+                        <p>Price of product</p>
+                        <button>Remove</button>
+                    </div>
+                </div>
             </div>
+            <button>Continue to checkout</button>
         </>
     )
 }
