@@ -1,4 +1,9 @@
+import { useState, useContext } from "react"
+import { CartContext } from "../context/cartContextProvider";
+
 function ProductPageCard(props) {
+    const [products, setProducts] = useState([])
+    const { addToCart } = useContext(CartContext);
 
     return (
         <>
@@ -9,7 +14,7 @@ function ProductPageCard(props) {
                     <p>Category</p>
                     <p>{props.price}:-</p>
                     <div className="centerButton">
-                        <button>Add to cart</button>
+                        <button onClick={() => { addToCart(props) }}>Add to cart</button>
                     </div>
                 </div>
             </div>
