@@ -7,22 +7,25 @@ import Landingpage from './pages/Landingpage'
 import Catalogue from './pages/Catalogue'
 import Cart from './pages/Cart'
 import Product from './pages/Product'
+import { CartContextProvider } from './context/cartContextProvider'
 
 function App() {
 
 
   return (
     <>
-      <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path='/' element={<Landingpage />} />
-          <Route path='/catalogue' element={<Catalogue />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/product/:id' element={<Product />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <CartContextProvider>
+        <BrowserRouter>
+          <Nav />
+          <Routes>
+            <Route path='/' element={<Landingpage />} />
+            <Route path='/catalogue' element={<Catalogue />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/product/:id' element={<Product />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </CartContextProvider>
     </>
   )
 }

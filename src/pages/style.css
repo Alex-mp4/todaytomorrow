@@ -103,6 +103,10 @@ h5 {
     margin-bottom: var(--space-xs);
 }
 
+ul {
+    list-style: none;
+}
+
 .hero {
     width: 100%;
     display: flex;
