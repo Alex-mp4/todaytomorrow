@@ -110,7 +110,6 @@ function Landingpage() {
                 </Link>
             </div>
             <div className="productGridRow row3 d-flex">
-
                 <Link to={'/'} className="productCard">
                     <div className="d-flex">
                         <div className="product">

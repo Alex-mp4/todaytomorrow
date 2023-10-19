@@ -80,8 +80,6 @@ footer .logo {
     margin: 0;
 }
 
-.footerContainer div {}
-
 @media screen and (max-width: 1000px) {
     .footerContainer {
         display: block;

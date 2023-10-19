@@ -1,7 +1,7 @@
 import './style.css'
 import { useState, useEffect } from 'react'
 import { useParams } from "react-router-dom"
-import ProductCard from '../components/ProductCard.jsx'
+import ProductPageCard from '../components/ProductPageCard.jsx'
 
 function Catalogue() {
 
@@ -25,12 +25,14 @@ function Catalogue() {
 
     return (
         <>
-            <ProductCard
-                key={data.id}
-                name={data.name}
-                categories={data.categories}
-                price={data.price}
-            />
+            <div className='productPage'>
+                <ProductPageCard
+                    key={data.id}
+                    name={data.name}
+                    categories={data.categories}
+                    price={data.price}
+                />
+            </div>
         </>
     )
 }
