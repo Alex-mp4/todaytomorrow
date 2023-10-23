@@ -29,6 +29,7 @@ function Catalogue() {
                 <ProductPageCard
                     key={data.id}
                     name={data.name}
+                    image={data.image}
                     categories={data.categories}
                     price={data.price}
                 />

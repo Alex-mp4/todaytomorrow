@@ -39,31 +39,31 @@ function Landingpage() {
             <div className="categorySelection">
                 <Link to={'/'} className="first link">
                     <div className="categoryCircle">
-                        <img src="src/assets/seating.png" alt="Seating"></img>
+                        <img src="images/seating.png" alt="Seating"></img>
                     </div>
                     <p>Seating</p>
                 </Link>
                 <Link to={'/'} className="link">
                     <div className="categoryCircle">
-                        <img src="src/assets/table-chairs.png" alt="Tables"></img>
+                        <img src="images/table-chairs.png" alt="Tables"></img>
                     </div>
                     <p>Tables</p>
                 </Link>
                 <Link to={'/'} className="link">
                     <div className="categoryCircle">
-                        <img src="src/assets/lamp.png" alt="Lighting"></img>
+                        <img src="images/lamp.png" alt="Lighting"></img>
                     </div>
                     <p>Lighting</p>
                 </Link>
                 <Link to={'/'} className="link">
                     <div className="categoryCircle">
-                        <img src="src/assets/plant.png" alt="Plants"></img>
+                        <img src="images/plant.png" alt="Plants"></img>
                     </div>
                     <p>Plants</p>
                 </Link>
                 <Link to={'/'} className="link last">
                     <div className="categoryCircle">
-                        <img src="src/assets/parasol.png" alt="Shade"></img>
+                        <img src="images/parasol.png" alt="Shade"></img>
                     </div>
                     <p>Shade</p>
                 </Link>
@@ -71,7 +71,7 @@ function Landingpage() {
 
             <div className="slideshowContainer">
                 <p><span className='primaryColor'>OUR</span><span className='accentColor'>&</span>DESIGN</p>
-                <img src="src/assets/patioslideshow.jpg"></img>
+                <img src="images/patioslideshow.jpg"></img>
             </div>
 
             <h4 className="BSText"><span className='primaryColor'>BEST</span><span className='accentColor'>&</span>SELLERS</h4>
@@ -82,6 +82,7 @@ function Landingpage() {
                         key={product.id}
                         id={product.id}
                         name={product.name}
+                        image={product.image}
                         categories={product.categories}
                         price={product.price}
                     />
@@ -93,6 +94,7 @@ function Landingpage() {
                         key={product.id}
                         id={product.id}
                         name={product.name}
+                        image={product.image}
                         categories={product.categories}
                         price={product.price}
                     />
@@ -104,6 +106,7 @@ function Landingpage() {
                         key={product.id}
                         id={product.id}
                         name={product.name}
+                        image={product.image}
                         categories={product.categories}
                         price={product.price}
                     />

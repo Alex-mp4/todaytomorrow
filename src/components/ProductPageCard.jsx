@@ -5,13 +5,12 @@ import { Link } from "react-router-dom";
 function ProductPageCard(props) {
     const [products, setProducts] = useState([])
     const { addToCart } = useContext(CartContext);
-    let image = Math.floor(Math.random() * 6);
 
     return (
         <>
             <Link to={'../catalogue'}><button>Back to catalogue</button></Link>
             <div className="productCard">
-                <img src="../src/assets/${image}.jpg" alt="Image"></img>
+                <img src={`/images/${props.image}`} alt="Image" />
                 <div className="product">
                     <h4>{props.name}</h4>
                     <p>Category</p>

@@ -29,6 +29,7 @@ function Catalogue() {
                         key={product.id}
                         id={product.id}
                         name={product.name}
+                        image={product.image}
                         categories={product.categories}
                         price={product.price}
                     />
