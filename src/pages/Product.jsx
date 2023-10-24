@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from "react-router-dom"
 import ProductPageCard from '../components/ProductPageCard.jsx'
 
-function Catalogue() {
+function Product() {
 
     const [data, setData] = useState([])
     const { id } = useParams();
@@ -38,4 +38,4 @@ function Catalogue() {
     )
 }
 
-export default Catalogue
+export default Product
